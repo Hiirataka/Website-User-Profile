@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header img {
+    height: 140px;
+    width: 100%;
+    object-fit: cover;
+
+    position: absolute;
+}
+
+section {
+    display: flex;
+    gap: 70px;
+
+    margin-inline: 50px;
+    margin-bottom: 175px;
+}
+
+.content {
+    position: relative;
+    top: 75px;
+    flex: 2;
+}
+
+.content h1 {
+    margin-block: 8px 10px;
+}
+
+.content-1 {
+    background-color: #096986;
+    color: white;
+    padding: 25px;
+    border-radius: 6px;
+    border: 1px solid rgba(128, 128, 128, 0.327);
+}
+
+.profile {
+    text-align: center;
+    justify-items: center;
+}
+
+.icon {
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+}
+
+/* ukuran image icon */
+.icon-1 {
+    height: 6vh;
+    width: 6vh;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+/* h2 untuk bagian aside */
+.aside h2 {
+    background-color: #006480;
+    color: white;
+    height: 28px;
+    text-align: center;
+    align-content: center;
+    margin-bottom: 10px;
+}
+
+/* ukuran poto profil */
+.profile .image {
+    width: 50%;
+    border-radius: 3px;
+}
+
+.skill {
+    margin-top: 35px;
+}
+
+button {
+    font-weight: bold;
+    padding-block: 6px;
+    padding-inline: 8px;
+    background-color: #ccdbe9;
+    border-radius: 3px;
+    border: none;
+    margin-block: 3px;
+}
+
+.aside {
+    display: flex;
+    flex: 3;
+    gap: 18px;
+    flex-direction: column;
+
+    position: relative;
+    top: 150px;
+}
+
+.edu {
+    min-height: 235px;
+}
+
+.aside .card {
+    background-color: #9bb7e42b;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.smk, .univ {
+    width: 300px; 
+    margin-left: 30px;
+}
+
+footer {
+    background-color: #003142;
+    color: white;
+    height: 50px;
+    display: flex;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.card ul {
+    padding-left: 15px;
+}
+
+@media (max-width: 680px) {
+    section {
+        flex-direction: column;
+
+        margin-bottom: 90px;
+    }
+
+    .aside {
+        top: 65px;
+    }
+}
+
+@media (max-width: 769px) {
+    section {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 425px) {
+    .smk, .univ {
+        width: 250px;
+    }
+
+    section {
+        margin-inline: 30px;
+    }
+}
+
+@media (max-width: 370px) {
+    .smk, .univ {
+        width: 150px;
+    }
+    
+    .edu {
+       height: 245px;
+    }
+}
+
+@media (min-width: 1250px) {
+    section {
+        margin-inline: 90px;
+    }
+}
