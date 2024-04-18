@@ -157,7 +157,7 @@ footer {
     }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 340px) {
     .smk, .univ {
         width: 150px;
     }
